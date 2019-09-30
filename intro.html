@@ -7,15 +7,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
-  <title>Search the site</title>
+  <title>Books with Jupyter and Jekyll</title>
   <meta name="description" content="This the Jupyter Book for course content and notes.">
 
-  <link rel="canonical" href="https://kmsaumcis.github.io/mcis6273_f19_datamining/search">
+  <link rel="canonical" href="https://kmsaumcis.github.io/mcis6273_f19_datamining/intro.html">
   <link rel="alternate" type="application/rss+xml" title="Jupyter Book | MCIS6273 Fall 2019" href="https://kmsaumcis.github.io/mcis6273_f19_datamining/feed.xml">
 
-  <meta property="og:url"         content="https://kmsaumcis.github.io/mcis6273_f19_datamining/search" />
+  <meta property="og:url"         content="https://kmsaumcis.github.io/mcis6273_f19_datamining/intro.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Search the site" />
+<meta property="og:title"       content="Books with Jupyter and Jekyll" />
 <meta property="og:description" content="This the Jupyter Book for course content and notes." />
 <meta property="og:image"       content="" />
 
@@ -25,9 +25,9 @@
   "@context": "http://schema.org",
   "@type": "NewsArticle",
   "mainEntityOfPage":
-    "https://kmsaumcis.github.io/mcis6273_f19_datamining/search",
+    "https://kmsaumcis.github.io/mcis6273_f19_datamining/intro.html",
   "headline":
-    "Search the site",
+    "Books with Jupyter and Jekyll",
   "datePublished":
     "2019-09-30T07:40:40-06:00",
   "dateModified":
@@ -749,6 +749,13 @@ initFunction(initQuery);
 </nav>
 
       
+      <!-- Empty sidebar placeholder that we'll auto-fill with javascript -->
+      <aside class="sidebar__right">
+          <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
+          <nav class="onthispage">
+          </nav>
+      </aside>
+      
       <main class="c-textbook__page" tabindex="-1">
           <div class="o-wrapper">
             <div class="c-sidebar-toggle">
@@ -767,31 +774,84 @@ initFunction(initQuery);
             
 
             <div class="c-textbook__content">
-              <div class="search-content__inner-wrap">
-    <input type="text" id="lunr_search" class="search-input" tabindex="-1" placeholder="'Enter your search term...''" />
-    <div id="results" class="results"></div>
-</div>
+              <h1 id="books-with-jupyter-and-jekyll">Books with Jupyter and Jekyll</h1>
 
-<script>
-    // Add the lunr store since we will now search it
-    var store = [{
-        "title": "Distance and Similarity",
-        
-        "excerpt":
-            "Data Formats To maximize our use of data, especially large, complex data sets, we will need to understand the varied common types of data formats available today. We will frame our discussion of data formats separate from that of data representation, since the former is often centered around human, technological or machine needs, while the later allows us a more rigorous mathematical abstraction of data independent of technology. Text-based data formats Though the international community has developed standards to address the variety of written, spoken and performed (in the case of sign language) human languages across our planet, modern computers...",
-        "categories": [],
-        "tags": [],
-        "url": "https://kmsaumcis.github.io/mcis6273_f19_datamining/01_distance_and_similarity.html",
-        "teaser":null},{
-        "title": "Home",
-        
-        "excerpt":
-            "Getting started   To use this resource, navigate the items on the left pane.  ",
-        "categories": [],
-        "tags": [],
-        "url": "https://kmsaumcis.github.io/mcis6273_f19_datamining/start.html",
-        "teaser":null},]
-</script>
+<p><a href="https://circleci.com/gh/jupyter/jupyter-book"><img src="https://circleci.com/gh/jupyter/jupyter-book.svg?style=svg" class="left" /></a>
+<a href="https://codecov.io/gh/jupyter/jupyter-book"><img src="https://codecov.io/gh/jupyter/jupyter-book/branch/master/graph/badge.svg" class="left" /></a>
+<a href="https://doi.org/10.5281/zenodo.2799972"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.2799972.svg" class="left" /></a></p>
+<div style="clear:both;"></div>
+
+<p>Jupyter Books lets you build an online book using a collection of Jupyter Notebooks
+and Markdown files. Its output is similar to the excellent <a href="https://bookdown.org/yihui/bookdown/">Bookdown</a> tool,
+and adds extra functionality for people running a Jupyter stack.</p>
+
+<p>For an example of a book built with Jupyter Books, see the <a href="https://www.textbook.ds100.org/">textbook for Data 100</a> at UC Berkeley (or this website!)</p>
+
+<p>Here are a few features of Jupyter Books</p>
+
+<ul>
+  <li>A Command-Line Interface (CLI) to quickly create, build, and upgrade books.</li>
+  <li>Write book content in markdown and Jupyter Notebooks</li>
+  <li>Convert these into Jekyll pages that can be hosted for free on GitHub</li>
+  <li>Pages can have <a href="https://mybinder.org">Binder</a>, JupyterHub, or Theblab links
+automatically added for interactivity.</li>
+  <li>The website itself is based on Jekyll and is highly extensible.</li>
+  <li>There are lots of nifty HTML features under-the-hood, such as
+Turbolinks fast-navigation and click-to-copy in code cells.</li>
+</ul>
+
+<p>Check out other features in the <a href="features/features">Features section</a>.</p>
+
+<h2 id="getting-started">Getting started</h2>
+
+<p>To get started, you may be interested in the following links.
+Here are a few links of interest:</p>
+
+<ul>
+  <li>
+    <p><strong><a href="features/features">Jupyter Book features</a></strong> is a quick demo and overview
+of Jupyter Books.</p>
+  </li>
+  <li>
+    <p><strong><a href="guide/01_overview">The Jupyter Book Guide</a></strong>
+will step you through the process of configuring and building your own Jupyter Book.</p>
+  </li>
+</ul>
+
+<h3 id="installation">Installation</h3>
+
+<p>To install the Jupyter Book command-line interface (CLI), use <code class="highlighter-rouge">pip</code>!</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install jupyter-book
+</code></pre></div></div>
+
+<h3 id="create-a-new-book">Create a new book</h3>
+
+<p>Once you’ve installed the CLI, create a new book using the demo book content
+(the website that you’re viewing now) with this command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter-book create mybookname --demo
+</code></pre></div></div>
+
+<h3 id="build-the-markdown-for-your-book">Build the markdown for your book</h3>
+
+<p>Now, build the markdown that Jekyll will use for your book. Run this command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter-book build mybookname
+</code></pre></div></div>
+
+<h3 id="thats-it">That’s it!</h3>
+
+<p>You can now either push your book to GitHub and serve the demo with gh-pages,
+or modify the book with your own content.</p>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+
+<p>Jupyter Books was originally created by <a href="http://www.samlau.me/">Sam Lau</a> and <a href="https://predictablynoisy.com">Chris Holdgraf</a>
+with support of the <strong>UC Berkeley Data Science Education Program and the
+<a href="https://bids.berkeley.edu/">Berkeley Institute for Data Science</a></strong>.</p>
+
+
               <nav class="c-page__nav">
   
 

@@ -7,15 +7,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
-  <title>Search the site</title>
+  <title>Jupyter Book | MCIS6273 Fall 2019</title>
   <meta name="description" content="This the Jupyter Book for course content and notes.">
 
-  <link rel="canonical" href="https://kmsaumcis.github.io/mcis6273_f19_datamining/search">
+  <link rel="canonical" href="https://kmsaumcis.github.io/mcis6273_f19_datamining/sample_content/guide/05_advanced.html">
   <link rel="alternate" type="application/rss+xml" title="Jupyter Book | MCIS6273 Fall 2019" href="https://kmsaumcis.github.io/mcis6273_f19_datamining/feed.xml">
 
-  <meta property="og:url"         content="https://kmsaumcis.github.io/mcis6273_f19_datamining/search" />
+  <meta property="og:url"         content="https://kmsaumcis.github.io/mcis6273_f19_datamining/sample_content/guide/05_advanced.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Search the site" />
+<meta property="og:title"       content="Jupyter Book | MCIS6273 Fall 2019" />
 <meta property="og:description" content="This the Jupyter Book for course content and notes." />
 <meta property="og:image"       content="" />
 
@@ -25,9 +25,9 @@
   "@context": "http://schema.org",
   "@type": "NewsArticle",
   "mainEntityOfPage":
-    "https://kmsaumcis.github.io/mcis6273_f19_datamining/search",
+    "https://kmsaumcis.github.io/mcis6273_f19_datamining/sample_content/guide/05_advanced.html",
   "headline":
-    "Search the site",
+    "Jupyter Book | MCIS6273 Fall 2019",
   "datePublished":
     "2019-09-30T07:40:40-06:00",
   "dateModified":
@@ -749,6 +749,13 @@ initFunction(initQuery);
 </nav>
 
       
+      <!-- Empty sidebar placeholder that we'll auto-fill with javascript -->
+      <aside class="sidebar__right">
+          <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
+          <nav class="onthispage">
+          </nav>
+      </aside>
+      
       <main class="c-textbook__page" tabindex="-1">
           <div class="o-wrapper">
             <div class="c-sidebar-toggle">
@@ -767,31 +774,52 @@ initFunction(initQuery);
             
 
             <div class="c-textbook__content">
-              <div class="search-content__inner-wrap">
-    <input type="text" id="lunr_search" class="search-input" tabindex="-1" placeholder="'Enter your search term...''" />
-    <div id="results" class="results"></div>
-</div>
+              <p>This page contains more advanced and complete information about the
+<a href="https://github.com/jupyter/jupyter-book"><code class="highlighter-rouge">jupyter-book</code> repository</a>. See the sections below.</p>
 
-<script>
-    // Add the lunr store since we will now search it
-    var store = [{
-        "title": "Distance and Similarity",
-        
-        "excerpt":
-            "Data Formats To maximize our use of data, especially large, complex data sets, we will need to understand the varied common types of data formats available today. We will frame our discussion of data formats separate from that of data representation, since the former is often centered around human, technological or machine needs, while the later allows us a more rigorous mathematical abstraction of data independent of technology. Text-based data formats Though the international community has developed standards to address the variety of written, spoken and performed (in the case of sign language) human languages across our planet, modern computers...",
-        "categories": [],
-        "tags": [],
-        "url": "https://kmsaumcis.github.io/mcis6273_f19_datamining/01_distance_and_similarity.html",
-        "teaser":null},{
-        "title": "Home",
-        
-        "excerpt":
-            "Getting started   To use this resource, navigate the items on the left pane.  ",
-        "categories": [],
-        "tags": [],
-        "url": "https://kmsaumcis.github.io/mcis6273_f19_datamining/start.html",
-        "teaser":null},]
-</script>
+<h2 id="enable-google-analytics">Enable Google Analytics</h2>
+
+<p>If you have a Google Account, you can use Google Analytics to collect some 
+information on the traffic to your Jupyter Book. With this tool, you can find 
+out how many people are using your site, where they come from and how they 
+access it, wether they are using the Desktop or the mobile version etc.</p>
+
+<p>To add Google Analytics to your Jupyter Book, navigate to 
+<a href="https://analytics.google.com/analytics/web/">Google Analytics</a>, create a new 
+Google Analytics account and add the url of your Jupyter Book to a new 
+<em>property</em>. Once you have set everything up, your Google Analytics property 
+will have a so-called Tracking-ID, that typically starts with the letters UA. 
+All that you need to do is to copy this ID and paste it into your 
+configuration file:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">google_analytics</span><span class="pi">:</span>
+  <span class="na">mytrackingcode</span><span class="pi">:</span> <span class="s">UA-XXXXXXXXX-X</span>
+</code></pre></div></div>
+
+<h2 id="retain-custom-yaml-front-matter-in-your-files">Retain custom YAML front-matter in your files</h2>
+
+<p>Jupyter book will check your files for YAML front-matter and will <strong>append</strong>
+any newly-generated YAML to the built files for the page. This means you
+can provide your own custom YAML to files (which may be useful if you’d like
+to modify this site’s HTML).</p>
+
+<p>Be careful not to add YAML with the same key names as the auto-generated YAML, as
+this will create duplicated keys in your page’s front-matter.</p>
+
+<h2 id="deploying-a-jupyterhub">Deploying a JupyterHub</h2>
+
+<p>If you wish, you may deploy a JupyterHub alongside your textbook. This way, for pages that are built from
+Jupyter Notebooks, students can click the “interact” links
+at the top of each page and be taken to a live Jupyter Notebook running on your JupyterHub.</p>
+
+<p>The easiest way to set up a JupyterHub is to follow <a href="https://the-littlest-jupyterhub.readthedocs.io/en/latest/index.html">The Littlest JupyterHub guide</a>.
+This is a straightforward deployment of JupyterHub on a single VM, and is suitable for
+courses / workshops of less than 50-60 students.</p>
+
+<p>Once you have your JupyterHub set up, you can use the <a href="https://github.com/data-8/nbgitpuller">nbgitpuller</a>
+package to send links to course material to your students, or use the interact links that Textbooks for Jupyter
+automatically inserts into your course material.</p>
+
               <nav class="c-page__nav">
   
 

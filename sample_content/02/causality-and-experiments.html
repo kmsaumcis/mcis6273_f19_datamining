@@ -7,15 +7,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
-  <title>Search the site</title>
+  <title>Causality and Experiments</title>
   <meta name="description" content="This the Jupyter Book for course content and notes.">
 
-  <link rel="canonical" href="https://kmsaumcis.github.io/mcis6273_f19_datamining/search">
+  <link rel="canonical" href="https://kmsaumcis.github.io/mcis6273_f19_datamining/sample_content/02/causality-and-experiments.html">
   <link rel="alternate" type="application/rss+xml" title="Jupyter Book | MCIS6273 Fall 2019" href="https://kmsaumcis.github.io/mcis6273_f19_datamining/feed.xml">
 
-  <meta property="og:url"         content="https://kmsaumcis.github.io/mcis6273_f19_datamining/search" />
+  <meta property="og:url"         content="https://kmsaumcis.github.io/mcis6273_f19_datamining/sample_content/02/causality-and-experiments.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Search the site" />
+<meta property="og:title"       content="Causality and Experiments" />
 <meta property="og:description" content="This the Jupyter Book for course content and notes." />
 <meta property="og:image"       content="" />
 
@@ -25,9 +25,9 @@
   "@context": "http://schema.org",
   "@type": "NewsArticle",
   "mainEntityOfPage":
-    "https://kmsaumcis.github.io/mcis6273_f19_datamining/search",
+    "https://kmsaumcis.github.io/mcis6273_f19_datamining/sample_content/02/causality-and-experiments.html",
   "headline":
-    "Search the site",
+    "Causality and Experiments",
   "datePublished":
     "2019-09-30T07:40:40-06:00",
   "dateModified":
@@ -749,6 +749,13 @@ initFunction(initQuery);
 </nav>
 
       
+      <!-- Empty sidebar placeholder that we'll auto-fill with javascript -->
+      <aside class="sidebar__right">
+          <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
+          <nav class="onthispage">
+          </nav>
+      </aside>
+      
       <main class="c-textbook__page" tabindex="-1">
           <div class="o-wrapper">
             <div class="c-sidebar-toggle">
@@ -767,31 +774,47 @@ initFunction(initQuery);
             
 
             <div class="c-textbook__content">
-              <div class="search-content__inner-wrap">
-    <input type="text" id="lunr_search" class="search-input" tabindex="-1" placeholder="'Enter your search term...''" />
-    <div id="results" class="results"></div>
-</div>
+              <h1 id="causality-and-experiments">Causality and Experiments</h1>
 
-<script>
-    // Add the lunr store since we will now search it
-    var store = [{
-        "title": "Distance and Similarity",
-        
-        "excerpt":
-            "Data Formats To maximize our use of data, especially large, complex data sets, we will need to understand the varied common types of data formats available today. We will frame our discussion of data formats separate from that of data representation, since the former is often centered around human, technological or machine needs, while the later allows us a more rigorous mathematical abstraction of data independent of technology. Text-based data formats Though the international community has developed standards to address the variety of written, spoken and performed (in the case of sign language) human languages across our planet, modern computers...",
-        "categories": [],
-        "tags": [],
-        "url": "https://kmsaumcis.github.io/mcis6273_f19_datamining/01_distance_and_similarity.html",
-        "teaser":null},{
-        "title": "Home",
-        
-        "excerpt":
-            "Getting started   To use this resource, navigate the items on the left pane.  ",
-        "categories": [],
-        "tags": [],
-        "url": "https://kmsaumcis.github.io/mcis6273_f19_datamining/start.html",
-        "teaser":null},]
-</script>
+<p><em>“These problems are, and will probably ever remain, among the inscrutable
+secrets of nature. They belong to a class of questions radically inaccessible to
+the human intelligence.”</em> —The Times of London, September 1849, on how cholera
+is contracted and spread</p>
+
+<p>Does the death penalty have a deterrent effect? Is chocolate good for you? What
+causes breast cancer?</p>
+
+<p>All of these questions attempt to assign a cause to an effect. A careful
+examination of data can help shed light on questions like these. In this section
+you will learn some of the fundamental concepts involved in establishing
+causality.</p>
+
+<p>Observation is a key to good science. An <em>observational study</em> is one in which
+scientists make conclusions based on data that they have observed but had no
+hand in generating. In data science, many such studies involve observations on a
+group of individuals, a factor of interest called a <em>treatment</em>, and an
+<em>outcome</em> measured on each individual.</p>
+
+<p>It is easiest to think of the individuals as people. In a study of whether
+chocolate is good for the health, the individuals would indeed be people, the
+treatment would be eating chocolate, and the outcome might be a measure of blood
+pressure. But individuals in observational studies need not be people. In a
+study of whether the death penalty has a deterrent effect, the individuals could
+be the 50 states of the union. A state law allowing the death penalty would be
+the treatment, and an outcome could be the state’s murder rate.</p>
+
+<p>The fundamental question is whether the treatment has an effect on the outcome.
+Any relation between the treatment and the outcome is called an <em>association</em>.
+If the treatment causes the outcome to occur, then the association is <em>causal</em>.
+<em>Causality</em> is at the heart of all three questions posed at the start of this
+section. For example, one of the questions was whether chocolate directly causes
+improvements in health, not just whether there there is a relation between
+chocolate and health.</p>
+
+<p>The establishment of causality often takes place in two stages. First, an
+association is observed. Next, a more careful analysis leads to a decision about
+causality.</p>
+
               <nav class="c-page__nav">
   
 
