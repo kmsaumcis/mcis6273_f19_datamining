@@ -32,3 +32,6 @@ serve:
 build:
 	bundle exec jekyll build
 	touch _site/.nojekyll
+
+shuffle:
+	cp -R ./_site/* /home/kmaull/PycharmProjects/mcis6273_f19_datamining/_site/
